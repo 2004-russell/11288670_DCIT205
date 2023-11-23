@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> 
+            <img src="comScience_logo (1).png" style="width:250px" class="logo" alt="Computer Science Department Logo">
+        </div>
+
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html" style="color: rgb(97, 97, 104);">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+
+            </ul>
+            <div class="toggle_btn">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </div>
+
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html" style="color: rgb(97, 97, 104);">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </div>
+        </div>
+    </header>
+
+    <h1>Computer Science Department Events</h1>
+    
+    <div class="events-container">
+        <div class="event-card">
+            <img src="event3.jpeg" alt="Event 1">
+            <h3>BECOMING A WORLD CLASS SOFTWARE ENGINEER</h3>
+            <h4>20th August, 2020</h4>
+            <p>Venue - Software Lab</p>
+            <a href="#" class="blue">Learn More</a>
+        </div>
+    
+        <div class="event-card">
+            <img src="Cyber Security.jpg" alt="Event 2">
+            <h3>Global CyberTech Workshop</h3>
+            <h4>2nd & 3rd December, 2021</h4>
+            <p>Time: 8:30 am - 3:30 pm
+            Venue: Computer Science Department - University of Ghana</p>
+            <a href="#" class="blue">Learn More</a>
+        </div>
+    
+        <div class="event-card">
+            <img src="shortcourse17.08.2021.jpeg" alt="Event 3">
+            <h3>Online Short Courses</h3>
+            <h4>20th August, 2020</h4>
+            <p>Registration Deadline:
+            17th September, 2021</p>
+            <a href="#" class="blue">Learn More</a>
+        </div>
+    
+    </div>
+
+    <style>
+
+        body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-card {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+ .blue{
+  text-decoration: none;
+  color: #007bff;
+  padding: 5px 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+    </style>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "'ion-icon name=\"reorder-three-outline\""
+                : "'ion-icon name=\"close-outline\"'";
+        }
+
+    </script>
+    <section>
+        <h2>Featured Content</h2>
+        <!-- Your content goes here -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Computer Science Department. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
