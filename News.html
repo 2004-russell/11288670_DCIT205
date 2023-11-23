@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="comScience_logo (1).png" style="width:250px" class="logo" alt="Computer Science Department Logo">
+            </div>
+
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html" style="color: rgb(97, 97, 104);">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+
+            </ul>
+            <div class="toggle_btn">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </div>
+
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html" style="color: rgb(97, 97, 104);">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2>News</h2>
+        <div class="news-container">
+            <div class="news-item">
+                <img src="news1.jpg" alt="News 1" class="img">
+                <h3>News 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read more</a>
+            </div>
+    
+            <div class="news-item">
+                <img src="news2.jpg" alt="News 2" class="img">
+                <h3>News 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read more</a>
+            </div>
+    
+            <div class="news-item">
+                <img src="news3.jpg" alt="News 3" class="img">
+                <h3>News 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    
+        <div class="pagination">
+            <a href="#">Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next</a>
+        </div>
+    </main>
+
+    <style>
+        body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 100px;
+}
+
+ 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-item {
+  width: 33%;
+  margin-bottom: 20px;
+}
+
+.news-item h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pagination a {
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+ 
+
+
+    </style>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "'ion-icon name=\"reorder-three-outline\""
+                : "'ion-icon name=\"close-outline\"'";
+        }
+
+    </script>
+    <section>
+        <h2>Featured Content</h2>
+        <!-- Your content goes here -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Computer Science Department. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
