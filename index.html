@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+      <div class="navbar">
+        <div class="logo"> 
+            <img src="/img/comScience_logo (1).png" style="width:250px" class="logo" alt="Computer Science Department Logo">
+        </div>
+         
+            
+             <ul class="links">
+                      <li><a href="index.html" style="color: rgb(97, 97, 104);">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href=" Catalog.html">Catalog</a></li>
+                      <li><a href="Resources.html">Resources</a></li>
+                      <li><a href="Events.html">Events</a></li>
+                      <li><a href="Courses.html">Courses</a></li>
+                      <li><a href="News.html">News</a></li>
+                      <li><a href="Research.html">Research</a></li>
+                      <li><a href="Careers.html">Careers</a></li>
+                      <li><a href="Contact.html">Contact Us</a></li>
+                
+             </ul>
+                  <div class="toggle_btn">
+                    <ion-icon name="reorder-three-outline"></ion-icon>
+                </div> 
+               
+         
+        <div class="dropdown_menu">
+            <li><a href="index.html" style="color: rgb(97, 97, 104);">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href=" Catalog.html">Catalog</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="Research.html">Research</a></li>
+            <li><a href="Careers.html">Careers</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </div>
+      </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick =function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+          toggleBtnIcon.classList = isOpen
+                ? "'ion-icon name=\"reorder-three-outline\""
+                : "'ion-icon name=\"close-outline\"'";
+        }
+
+    </script>
+
+  
+
+ 
+
+
+    <div class="container">
+        <div class="hero-section">
+           
+            <div class="hero-text">
+                <h1>Computer Science Department</h1>
+                <p>Welcome to the Computer Science Department at your university. We offer a variety of undergraduate and
+                    graduate programs in computer science and related fields.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+    <section class="about">
+        <h2>About Us</h2>
+        <p>The Computer Science Department is at the forefront of innovation in the ever-changing world of technology. Our
+            faculty are experts in their fields and are passionate about teaching and mentoring the next generation of
+            computer scientists.</p>
+        <p>Our students are highly motivated and talented, and they go on to successful careers in a variety of industries,
+            including software development, web development, data science, and artificial intelligence.</p>
+    </section>
+    
+    <section class="programs">
+        <h2>Programs</h2>
+        <ul>
+            <li><a href="programs/undergraduate">Undergraduate Programs</a></li>
+            <li><a href="programs/graduate">Graduate Programs</a></li>
+            <li><a href="programs/minors">Minors</a></li>
+            <li><a href="programs/certificates">Certificates</a></li>
+        </ul>
+    </section>
+    
+    <section class="research">
+        <h2>Research</h2>
+        <p>Our faculty are engaged in cutting-edge research in a variety of areas, including artificial intelligence,
+            machine learning, cybersecurity, and software engineering.</p>
+        <p>We offer a variety of opportunities for undergraduate and graduate students to get involved in research,
+            including internships, research assistantships, and independent research projects.</p>
+    </section>
+    
+    <section class="news-events">
+        <h2>News</h2>
+        <ul>
+            <li><a href="news/article1">New Faculty Member Joins Department</a></li>
+            <li><a href="news/article2">Students Win Programming Competition</a></li>
+            <li><a href="events/lecture1">Guest Lecture on Artificial Intelligence</a></li>
+            <li><a href="events/workshop1">Data Science Workshop</a></li>
+        </ul>
+    </section>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Please contact us if you have any questions or would like to learn more about our
+            programs.</p>
+    <ul>
+        <li>Phone:<a href="tel:+233 50 896 4410">+233 50 896 4410</a>
+        </li>
+        <li>Email:<a href="mailto:rbnymorkeh@st.ug.edu.gh">rbnymorkeh@st.ug.edu.gh</a>
+        </li>
+        <li>Address: Tema, community 7</li>
+    </ul>
+    </section>
+    <footer>
+        <p>&copy; 2023 Computer Science Department. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
