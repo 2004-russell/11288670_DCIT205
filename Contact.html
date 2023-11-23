@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> 
+            <img src="comScience_logo (1).png" style="width:250px" class="logo" alt="Computer Science Department Logo">
+        </div>
+
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html" style="color: rgb(97, 97, 104);">Contact Us</a></li>
+
+            </ul>
+            <div class="toggle_btn">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </div>
+
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html" style="color: rgb(97, 97, 104);">Contact Us</a></li>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "'ion-icon name=\"reorder-three-outline\""
+                : "'ion-icon name=\"close-outline\"'";
+        }
+
+    </script>
+<body>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Please fill out the form below to contact us.</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <p>You can also reach us by:</p>
+    <ul>
+        <li>Phone:<a href="tel:+233 50 896 4410">+233 50 896 4410</a>
+</li>
+        <li>Email:<a href="mailto:rbnymorkeh@st.ug.edu.gh">rbnymorkeh@st.ug.edu.gh</a>
+ </li>
+        <li>Address: Tema, community 7</li>
+    </ul>
+
+    
+    <script src="script.js"></script>
+
+
+    <style>body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+     text-align: center;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+ul {
+     text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+</style>
+</body>
+    <footer>
+        <p>&copy; 2023 Computer Science Department. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
