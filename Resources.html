@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> 
+            <img src="comScience_logo (1).png" style="width:250px" class="logo" alt="Computer Science Department Logo">
+        </div>
+
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html" style="color: rgb(97, 97, 104);">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+
+            </ul>
+            <div class="toggle_btn">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </div>
+
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html" style="color: rgb(97, 97, 104);">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </div>
+        </div>
+    </header>
+
+    <h1>Computer Science Department Resources</h1>
+    
+    <section class="resources">
+        <h2>Online Tutorials</h2>
+        <ul>
+            <li><a href="https://www.tutorialspoint.com/cprogramming/cprogramming_tutorial.htm">C Programming Tutorial</a>
+            </li>
+            <li><a href="https://www.w3schools.com/html/html_tutorial.asp">HTML Tutorial</a></li>
+            <li><a href="https://www.javascripttutorial.net/">JavaScript Tutorial</a></li>
+            <li><a href="https://www.python.org/tutorials/">Python Tutorial</a></li>
+            <li><a href="https://www.java.com/docs/learn/java-tutorial/">Java Tutorial</a></li>
+        </ul>
+    </section>
+    
+    <section class="resources">
+        <h2>Programming Reference Materials</h2>
+        <ul>
+            <li><a href="https://www.cplusplus.com/reference/">C++ Reference</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/">HTML Reference</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/">JavaScript Reference</a></li>
+    
+    
+            <li><a href="https://docs.python.org/3/library/index.html">Python Library Reference</a></li>
+            <li><a href="https://docs.oracle.com/javase/8/docs/api/">Java API Reference</a></li>
+        </ul>
+    </section>
+    
+    <section class="resources">
+        <h2>Software Development Tools</h2>
+        <ul>
+            <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+            <li><a href="https://www.jetbrains.com/pycharm/">PyCharm</a></li>
+            <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a></li>
+            <li><a href="https://www.eclipse.org/">Eclipse IDE</a></li>
+            <li><a href="https://netbeans.apache.org/">NetBeans IDE</a></li>
+        </ul>
+    </section>
+
+    <style>
+        body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.resources {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.resources h2 {
+  margin-bottom: 10px;
+}
+
+.resources ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resources li {
+  margin-bottom: 10px;
+}
+
+.resources a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+    </style>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "'ion-icon name=\"reorder-three-outline\""
+                : "'ion-icon name=\"close-outline\"'";
+        }
+
+    </script>
+    <section>
+        <h2>Featured Content</h2>
+        <!-- Your content goes here -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Computer Science Department. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
