@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> 
+            <img src="comScience_logo (1).png" style="width:250px" class="logo" alt="Computer Science Department Logo">
+        </div>
+
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html" style="color: rgb(97, 97, 104);">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+
+            </ul>
+            <div class="toggle_btn">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </div>
+
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html" style="color: rgb(97, 97, 104);">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </div>
+        </div>
+    </header>
+
+    <h1>Course Catalog</h1>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for courses">
+        </div>
+        <div class="filter-bar">
+            <label for="department">Department:</label>
+            <select id="department">
+                <option value="">All Departments</option>
+    
+    
+                <option value="Computer Science">Computer Science</option>
+    
+    
+                <option value="Information Technology">Information Technology</option>
+    
+    
+                <option value="Software Engineering">Software Engineering</option>
+    
+    
+            </select>
+    
+    
+        </div>
+    
+    
+        <div class="courses">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Description</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CSC101</td>
+                        <td>Introduction to Programming</td>
+                        <td>An introduction to the fundamental concepts of programming, including data types, variables,
+                            control flow, functions, and object-oriented programming.</td>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <td>CSC202</td>
+                        <td>Data Structures and Algorithms</td>
+                        <td>A study of fundamental data structures, including arrays, linked lists, stacks, queues, trees,
+                            and graphs, and their corresponding algorithms for searching, sorting, and manipulating data.
+                        </td>
+                        <td>Jane Doe</td>
+                    </tr>
+                    <tr>
+                        <td>CSC303</td>
+                        <td>Computer Architecture</td>
+                        <td>An introduction to the hardware and software components of computer systems, including the
+                            organization of CPU, memory, input/output devices, and operating systems.</td>
+                        <td>Peter Jones</td>
+                    </tr>
+                    <tr>
+                        <td>CSC404</td>
+                        <td>Artificial Intelligence</td>
+                        <td>A study of the fundamental concepts of artificial intelligence, including problem-solving,
+                            search algorithms, machine learning, and natural language processing.</td>
+                        <td>Mary Smith</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <style>
+        body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.filter-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.filter-bar label {
+  display: block;
+  margin-right: 10px;
+}
+
+.filter-bar select {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.courses table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.courses th, .courses td {
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.courses th {
+  background-color: #f2f2f2;
+}
+
+    </style>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "'ion-icon name=\"reorder-three-outline\""
+                : "'ion-icon name=\"close-outline\"'";
+        }
+
+    </script>
+    <section>
+        <h2>Featured Content</h2>
+        <!-- Your content goes here -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Computer Science Department. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
