@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> 
+            <img src="comScience_logo (1).png" style="width:250px" class="logo" alt="Computer Science Department Logo">
+        </div>
+
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" style="color: rgb(97, 97, 104);">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+
+            </ul>
+            <div class="toggle_btn">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </div>
+
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"  style="color: rgb(97, 97, 104);">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About the Computer Science Department</h2>
+            <p>The Computer Science Department is a vibrant and innovative community dedicated to advancing the field of
+                computer science and preparing students for successful careers in the ever-evolving tech industry.</p>
+            <p>We offer a comprehensive range of undergraduate and graduate programs that provide students with the
+                knowledge, skills, and hands-on experience they need to succeed in today's demanding job market.</p>
+            <p>Our faculty are world-renowned experts in their fields, and they are passionate about teaching and mentoring
+                the next generation of computer scientists.</p>
+            <p>Our students are highly motivated and talented individuals who are eager to make a difference in the world.
+                They go on to successful careers in a variety of industries, including software development, web
+                development, artificial intelligence, and cybersecurity.</p>
+        </section>
+    
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>To provide students with a world-class education in computer science, preparing them for successful careers
+                in the ever-changing tech industry.</p>
+            <p>To advance the field of computer science through cutting-edge research and innovation.</p>
+            <p>To foster a diverse and inclusive community of computer scientists who are committed to making a positive
+                impact on the world.</p>
+        </section>
+    
+        <section class="values">
+            <h2>Our Values</h2>
+            <p>Integrity: We are committed to honesty, transparency, and ethical behavior in all of our endeavors.</p>
+            <p>Innovation: We are constantly seeking new and better ways to teach, learn, and conduct research.</p>
+            <p>Excellence: We strive to achieve the highest standards of quality in everything we do.</p>
+            <p>Collaboration: We believe that by working together, we can achieve great things.</p>
+            <p>Diversity: We value the diversity of our students, faculty, and staff, and we are committed to creating an
+                inclusive environment for all.</p>
+        </section>
+    </main>
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "'ion-icon name=\"reorder-three-outline\""
+                : "'ion-icon name=\"close-outline\"'";
+        }
+
+    </script>
+    <section>
+        <h2>Featured Content</h2>
+        <!-- Your content goes here -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Computer Science Department. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
