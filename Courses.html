@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> 
+            <img src="comScience_logo (1).png" style="width:250px" class="logo" alt="Computer Science Department Logo">
+        </div>
+
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html" style="color: rgb(97, 97, 104);">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+
+            </ul>
+            <div class="toggle_btn">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </div>
+
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html" style="color: rgb(97, 97, 104);">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </div>
+        </div>
+    </header>
+
+    <main class="courses">
+        <h2>Courses</h2>
+    
+        <table>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Description</th>
+                <th>Prerequisites</th>
+                <th>Instructor</th>
+            </tr>
+            <tr>
+                <td>CS-101</td>
+                <td>Introduction to Computer Science</td>
+                <td>This course provides an overview of the fundamental concepts of computer science, including programming,
+                    algorithms, data structures, and computer architecture.</td>
+                <td>None</td>
+                <td>Dr. Jane Doe</td>
+            </tr>
+            <tr>
+                <td>CS-202</td>
+                <td>Object-Oriented Programming</td>
+                <td>This course introduces the principles of object-oriented programming, including classes, objects,
+                    inheritance, polymorphism, and encapsulation.</td>
+                <td>CS-101</td>
+                <td>Dr. John Smith</td>
+            </tr>
+            <tr>
+                <td>CS-303</td>
+                <td>Data Structures and Algorithms</td>
+                <td>This course covers the design and analysis of fundamental data structures, such as arrays, linked lists,
+                    stacks, queues, trees, and graphs, along with efficient algorithms for searching, sorting, and other
+                    operations.</td>
+                <td>CS-202</td>
+                <td>Dr. Mary Jones</td>
+            </tr>
+            <tr>
+                <td>CS-404</td>
+                <td>Computer Networks</td>
+                <td>This course explores the principles and protocols of computer networks, including network architectures,
+                    routing, switching, and network security.</td>
+                <td>CS-202</td>
+                <td>Dr. David Brown</td>
+            </tr>
+        </table>
+    </main>
+
+    <style>
+        body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 100px;
+}
+
+ 
+
+ 
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+ 
+    </style>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "'ion-icon name=\"reorder-three-outline\""
+                : "'ion-icon name=\"close-outline\"'";
+        }
+
+    </script>
+    <section>
+        <h2>Featured Content</h2>
+        <!-- Your content goes here -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Computer Science Department. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
