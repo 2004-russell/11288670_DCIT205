@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> 
+            <img src="comScience_logo (1).png" style="width:250px" class="logo" alt="Computer Science Department Logo">
+        </div>
+
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html" style="color: rgb(97, 97, 104);">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+
+            </ul>
+            <div class="toggle_btn">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </div>
+
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html" style="color: rgb(97, 97, 104);">Research</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Research</h1>
+    
+        <section class="research-areas">
+            <h2>Research Areas</h2>
+            <ul>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+                <li>Cybersecurity</li>
+                <li>Software Engineering</li>
+                <li>Data Science</li>
+                <li>Human-Computer Interaction</li>
+                <li>Graphics and Visualization</li>
+                <li>Computational Biology</li>
+                <li>Robotics and Automation</li>
+            </ul>
+        </section>
+    
+        <section class="faculty-research">
+            <h2>Faculty Research</h2>
+            <ul>
+                <li>Dr. Jane Doe: Researching new algorithms for machine learning.</li>
+                <li>Dr. John Smith: Developing new methods for cybersecurity.</li>
+                <li>Dr. Mary Jones: Working on the latest software engineering techniques.</li>
+                <li>Dr. Peter Brown: Exploring the possibilities of data science.</li>
+                <li>Dr. Sarah Lee: Designing new interfaces for human-computer interaction.</li>
+            </ul>
+        </section>
+    
+        <section class="research-opportunities">
+            <h2>Research Opportunities</h2>
+            <p>The Computer Science Department offers a variety of research opportunities for undergraduate and graduate
+                students, including:</p>
+            <ul>
+                <li>Research internships</li>
+                <li>Research assistantships</li>
+                <li>Independent research projects</li>
+                <li>Undergraduate research opportunities</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <style>
+        body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 100px;
+}
+
+ 
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav li.active a {
+    color: #f00;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+ 
+    </style>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "'ion-icon name=\"reorder-three-outline\""
+                : "'ion-icon name=\"close-outline\"'";
+        }
+
+    </script>
+    <section>
+        <h2>Featured Content</h2>
+        <!-- Your content goes here -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Computer Science Department. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
