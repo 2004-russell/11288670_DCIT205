@@ -52,36 +52,66 @@
 
     <main>
         <h2>News</h2>
-        <div class="news-container">
-            <div class="news-item">
-                <img src="news1.jpg" alt="News 1" class="img">
-                <h3>News 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Read more</a>
-            </div>
-    
-            <div class="news-item">
-                <img src="news2.jpg" alt="News 2" class="img">
-                <h3>News 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Read more</a>
-            </div>
-    
-            <div class="news-item">
-                <img src="news3.jpg" alt="News 3" class="img">
-                <h3>News 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Read more</a>
+
+      <div class="news-container">
+        <div class="card">
+            <img src="/CCNA.png" alt="Product Image" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Computer Network Fundamental [CCNA]</h2>
+                <p class="card-description">We provide quality training for students to become a Cisco Certified Network Associate (CCNA).</p>
+                <div class="card-footer">
+                    <span class="card-date">10/12/23</span>
+                    <a href="#" class="card-button">Read more</a>
+                </div>
             </div>
         </div>
-    
-        <div class="pagination">
-            <a href="#">Previous</a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">Next</a>
+
+        <div class="card">
+            <img src="/Web Dev.png" alt="Product Image" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Introduction To Web Programming</h2>
+                <p class="card-description">Understand the fundamentals of web technologies and create web-based applications with latest technologies.</p>
+                <div class="card-footer">
+                    <span class="card-date">01/06/23</span>
+                    <a href="#" class="card-button">Read more</a>
+                </div>
+            </div>
         </div>
+
+        <div class="card">
+            <img src="/Mobile App Dev.jpg" alt="Product Image" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Mobile Application Development</h2>
+                <p class="card-description">We provide world class technologies for Mobile Application Development using the mobile-first worklight by IBM.</p>
+                <div class="card-footer">
+                    <span class="card-date">03/13/23</span>
+                    <a href="#" class="card-button">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/Cyber Security.jpg" alt="Product Image" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Information Security and Ethical Hacking</h2>
+                <p class="card-description">Learn the various techniques used to secure a computer system from attacks through hacking.</p>
+                <div class="card-footer">
+                    <span class="card-date">05/16/23</span>
+                    <a href="#" class="card-button">Read more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+    <div class="pagination">
+        <a href="#">Previous</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Next</a>
+    </div>
+
     </main>
 
     <style>
@@ -102,11 +132,7 @@ h1 {
   margin-bottom: 0;
 }
 
-.img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
+ 
 
 main {
   padding: 20px;
@@ -123,15 +149,7 @@ h2 {
   justify-content: space-between;
 }
 
-.news-item {
-  width: 33%;
-  margin-bottom: 20px;
-}
-
-.news-item h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
+ 
 
 .pagination {
   text-align: center;
@@ -145,6 +163,60 @@ h2 {
 }
 
  
+
+
+.card {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.card-date {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
     </style>
@@ -164,10 +236,7 @@ h2 {
         }
 
     </script>
-    <section>
-        <h2>Featured Content</h2>
-        <!-- Your content goes here -->
-    </section>
+   
     <footer>
         <p>&copy; 2023 Computer Science Department. All rights reserved.</p>
     </footer>
