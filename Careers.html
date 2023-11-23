@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> 
+            <img src="comScience_logo (1).png" style="width:250px" class="logo" alt="Computer Science Department Logo">
+        </div>
+
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html" style="color: rgb(97, 97, 104);">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+
+            </ul>
+            <div class="toggle_btn">
+                <ion-icon name="reorder-three-outline"></ion-icon>
+            </div>
+
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=" Catalog.html">Catalog</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Careers.html" style="color: rgb(97, 97, 104);">Careers</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Careers</h1>
+        <p>The Computer Science Department offers a wide range of career opportunities for our graduates. Our students are
+            highly sought after by employers in a variety of industries, including software development, web development,
+            data science, and artificial intelligence.</p>
+    
+        <h2>Career Paths</h2>
+        <ul>
+            <li>Software Developer</li>
+            <li>Web Developer</li>
+            <li>Data Scientist</li>
+            <li>Machine Learning Engineer</li>
+            <li>Information Security Analyst</li>
+            <li>Network Administrator</li>
+            <li>Database Administrator</li>
+        </ul>
+    
+        <h2>How to Get a Job in Computer Science</h2>
+        <p>There are a number of things you can do to increase your chances of getting a job in computer science. These
+            include:</p>
+    
+        <ul>
+            <li>Get a strong foundation in computer science fundamentals.</li>
+            <li>Develop a strong portfolio of projects.</li>
+            <li>Complete internships or co-ops.</li>
+            <li>Network with professionals in the field.</li>
+            <li>Attend career fairs and workshops.</li>
+        </ul>
+    
+        <h2>Resources for Job Seekers</h2>
+        <ul>
+            <li>Career Center</li>
+            <li>Alumni Network</li>
+            <li>Online Job Boards</li>
+            <li>Professional Organizations</li>
+        </ul>
+    
+        <h2>We're Here to Help</h2>
+        <p>If you have any questions about careers in computer science, please don't hesitate to contact us. We're here to
+            help you every step of the way.</p>
+    
+        <p class="contact-info">
+            Computer Science Department<br>
+            123 Main Street<br>
+            Anytown, USA 12345<br>
+            (123) 456-7890<br>
+            careers@cs.example.com
+        </p>
+    </main>
+
+    <style>
+
+        body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 100px;
+  text-align: center;
+}
+
+ 
+
+img {
+  width: 150px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+ 
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+ 
+    </style>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? "'ion-icon name=\"reorder-three-outline\""
+                : "'ion-icon name=\"close-outline\"'";
+        }
+
+    </script>
+    <section>
+        <h2>Featured Content</h2>
+        <!-- Your content goes here -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Computer Science Department. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
